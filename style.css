@@ -1,5 +1,5 @@
 html body {
-    background-color:  white;
+    background-color: white;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container {
@@ -8,53 +8,73 @@ html body {
     border-color: inherit;
     border-radius: 15px;
 }
-
 @font-face {
-  font-family: "TWITCH";
-  src: url(DIMIS.TTF) format("truetype");
+    font-family: "TWITCH";
+    src: url(DIMIS.TTF) format("truetype");
+}
+.main-bar {
+    font-family: 'TWITCH', serif;
+    color: #6433A5 !important;
+    font-size: 80px;
+    text-align: center;
+    margin: 15px;
+}
+.streamers-list {
+    background-color: #6441a4;
+    margin: 15px;
+    padding: 20px;
+}
+.streamer-info {
+    margin: 20px 10px;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 5px;
 }
 
-.main-bar{
-  font-family: 'TWITCH', serif;
-  color: #6433A5 !important;
-  font-size: 80px;
-  text-align: center;
-  margin: 15px;
+a, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+  outline: none !important; 
+  border: none !important;
 }
 
-.streamers-list{
-  background-color: #6441a4;
-  margin: 15px;
-  padding: 20px;
+.active:hover {
+  border-style: ridge;
 }
-
-.streamer-info{
-  margin: 20px 10px;
-  padding: 20px 10px 20px 10px;
-  background-color: white;
-    border: 5px solid white;
+.not-active {
+    opacity: 0.3;
 }
-
-.active{
-    background-color: rgb(183, 151, 242);
+.not-active:hover {
+    opacity: 0.7 !important;
 }
-
-.streamer-info:hover{
-  border: 5px solid #333333;
+.dropdown-option {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
 }
-
-.dropdown-option{
-  font-size: 15px;
-  text-align: center;
-  font-weight: bolder;
+.dropdown-option:hover {
+    background-color: #333333 !important;
+    color: white !important;
 }
-
-.dropdown-option:hover{
-  background-color: #333333 !important;
- color: white !important;
+.dropdown-div {
+    margin: 0px 15px;
+    text-align: right;
 }
-
-.dropdown-div{
- margin: 0px 15px;
- text-align: right;
+.online-text {
+    font-weight: bolder;
+    color: #6433A5 !important;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.stream-name {
+    color: black !important;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.offline-text {
+    margin-left: 10px;
+    margin-right: 15px;
 }
