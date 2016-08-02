@@ -8,11 +8,20 @@ getStreamsData(); // ON LOAD
 
 
 // --- BEGIN OF BINDINGS --- //
-$("#all").on("click", displayAll);
+$("#all").on("click", function() {
+    displayAll();
+    $("#button-text").html("all");
+});
 
-$("#online").on("click", displayOnline);
+$("#online").on("click", function() {
+    displayOnline();
+    $("#button-text").html("online");
+});
 
-$("#offline").on("click", displayOffline);
+$("#offline").on("click", function() {
+    displayOffline();
+    $("#button-text").html("offline");
+});
 // --- END OF BINDINGS --- //
 
 // --- BEGIN OF DEFINITIONS --- //

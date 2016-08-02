@@ -31,15 +31,13 @@ html body {
     border: 3px solid white;
     border-radius: 5px;
 }
-
 a, a:visited, a:hover, a:active {
-  text-decoration: none !important;
-  outline: none !important; 
-  border: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+    border: none !important;
 }
-
 .active:hover {
-  border-style: ridge;
+    border-style: ridge;
 }
 .not-active {
     opacity: 0.3;
